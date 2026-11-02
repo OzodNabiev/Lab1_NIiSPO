@@ -1,0 +1,26 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+*.log
+
+# Результаты (генерируются)
+task3/simple_python_app/*.pyc
+task4/compose/**/__pycache__/
+
+# Word temp files
+~$*.docx

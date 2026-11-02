@@ -1,0 +1,23 @@
+FROM python:3.12.1-alpine AS builder
+
+RUN apk update \
+    && apk add --no-cache gcc musl-dev postgresql-dev
+
+RUN --mount=type=bind,source=requirements.txt,target=/app/requirements.txt \
+    pip wheel --no-cache-dir --no-deps -r /app/requirements.txt --wheel-dir /app/wheels
+
+# ------------------
+
+FROM python:3.12.1-alpine
+
+COPY --from=builder /app/wheels /wheels
+
+RUN apk add --no-cache libpq
+
+RUN pip install --no-cache-dir /wheels/*
+
+COPY app.py /app/
+
+WORKDIR /app
+
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0"]
