@@ -4,12 +4,6 @@
 
 ## Управление многоконтейнерными системами
 
-!\[Docker](https://img.shields.io/badge/Docker-29.8.0-2496ED?logo=docker\&logoColor=white)
-!\[Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python\&logoColor=white)
-!\[FastAPI](https://img.shields.io/badge/FastAPI-0.110-009688?logo=fastapi\&logoColor=white)
-!\[PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-4169E1?logo=postgresql\&logoColor=white)
-!\[nginx](https://img.shields.io/badge/nginx-alpine-009639?logo=nginx\&logoColor=white)
-
 **Дисциплина:** Непрерывное интегрирование и сборка программного обеспечения  
 **Факультет:** Прикладной математики и информатики  
 **Кафедра:** Информационных систем управления  
